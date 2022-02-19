@@ -1,7 +1,7 @@
 module.exports = {
     name: 'reload',
     category: "owner",
-	aliases: ["re", "rl"],
+    aliases: ["re", "rl"],
     execute(message, args, client) {
 		if (!args[0]) return 
 		const command = 
