@@ -1,8 +1,8 @@
 module.exports = {
-    name: 'test',
-    category: "mod",
-	aliases: [],
-    execute(message, args, client) {
-        
-    }
+	name: 'test',
+    	category: "developer",
+    	aliases: [],
+    	execute(message, args, client) {
+		
+    	}
 }
