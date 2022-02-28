@@ -12,7 +12,6 @@ module.exports = {
 		delete require.cache[require.resolve(`../${command.category}/${command.name}.js`)]
 		const commandFile = require(`../${command.category}/${command.name}.js`)
 		client.commands.set(commandFile.name, commandFile)
-		if (commandFile.aliases) commandFile.aliases.forEach(a => client.aliases.set(a, commandFile.name))
 		return message.channel.send(`${commandFile.name} reload Successfully.`)
 	} catch (error) {
 		return console.error(error)
