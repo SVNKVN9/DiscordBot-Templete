@@ -13,6 +13,10 @@ module.exports = async (client, message) => {
 
     if(!command) return
 
+    if (command.category == 'developer') {
+        if (!client.config.ownerID.includes(message.author.id)) return
+    }
+    
     try {
         command.execute(message, args, client)
     }catch(err) {
